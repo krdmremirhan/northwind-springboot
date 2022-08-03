@@ -20,9 +20,6 @@ public class ProductsController {
 	
 	private  ProductService productService;
 
-	
-	
-	
 	@Autowired
 	public ProductsController(ProductService productService) {
 		super();
@@ -32,9 +29,7 @@ public class ProductsController {
 	@GetMapping("/getall	")
 	public List<Product > getAll(){
 		return  this.productService.getAll();  
-		
-		
-		
+
 	}
 	
 
